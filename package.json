@@ -1,0 +1,28 @@
+{
+  "name": "create-temp-dir",
+  "version": "0.0.0",
+  "description": "Create a temporary directory under /tmp",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "dir",
+    "tmp",
+    "temp",
+    "directory",
+    "dir"
+  ],
+  "repository": {
+    "url": "git@github.com:azer/create-temp-dir.git",
+    "type": "git"
+  },
+  "author": "azer",
+  "license": "BSD",
+  "devDependencies": {
+    "prova": "^1.7.4"
+  },
+  "dependencies": {
+    "rimraf": "^2.2.8"
+  }
+}
