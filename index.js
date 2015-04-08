@@ -6,7 +6,7 @@ var rimraf = require("rimraf");
 module.exports = create;
 
 function create (prefix, mode, callback) {
-  var id = Math.floor(Math.random() * 99999999);
+  var id = Math.random().toString(36).substr(2);
   var dir = path.join(os.tmpdir(), prefix + '-' + id);
 
   if (arguments.length == 2) {
