@@ -1,4 +1,5 @@
 var fs = require("fs");
+var os = require("os");
 var path = require("path");
 var rimraf = require("rimraf");
 
@@ -6,7 +7,7 @@ module.exports = create;
 
 function create (prefix, mode, callback) {
   var id = Math.floor(Math.random() * 99999999);
-  var dir = path.join('/tmp/' + prefix + '-' + id);
+  var dir = path.join(os.tmpdir(), prefix + '-' + id);
 
   if (arguments.length == 2) {
     callback = mode;
